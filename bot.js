@@ -8,6 +8,18 @@ const client = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
 });
 
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 10000;
+
+app.get('/', (req, res) => {
+  res.send('Bot is alive!');
+});
+
+app.listen(PORT, () => {
+  console.log('Web server running on port '+PORT);
+});
+
 client.on('ready', () => {
     console.log(`✅ Logged in as ${client.user.tag}`);
 });
