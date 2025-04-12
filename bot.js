@@ -13,7 +13,7 @@ client.on('ready', () => {
 });
 
 client.on('messageCreate', async (message) => {
-    console.log(message.author.globalName, ": ", message.content, message);
+    console.log(message.author.globalName, ": ", message.content);
     if (message.author.bot) return;
     if (!message.mentions.has(client.user)) return;
     try {
