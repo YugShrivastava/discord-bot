@@ -1,0 +1,27 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "Making a discord bot",
+  "main": "bot.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YugShrivastava/discord-bot.git"
+  },
+  "author": "Yug Shrivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YugShrivastava/discord-bot/issues"
+  },
+  "homepage": "https://github.com/YugShrivastava/discord-bot#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.0",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
